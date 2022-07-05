@@ -1,0 +1,51 @@
+@import "../../../style/style.scss";
+
+.topbar {
+  overflow: hidden;
+  @include respond-to(phone-and-down) {
+    display: none;
+  }
+  .banner {
+    background: url("https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/bannertop.jpg?1655865257425");
+    background-repeat: no-repeat;
+    height: 8rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    @include flex($align: center);
+
+    &-text {
+      font-size: 1.4rem;
+      margin: 12px 0 0 0;
+      font-weight: 470;
+      @include respond-to(tablet-and-down) {
+        font-size: 1.2rem;
+      }
+
+      .hotline {
+        @include flex($align: center);
+
+        img {
+          padding-left: 0.5rem;
+          height: auto;
+          border: 0;
+        }
+      }
+      a {
+        color: #000;
+        padding: 0 10px 0 0;
+
+        i {
+          padding-right: 10px;
+          font-size: 1.6rem;
+        }
+      }
+      b {
+        color: $yellow;
+      }
+    }
+  }
+}

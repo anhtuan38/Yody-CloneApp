@@ -1,0 +1,10 @@
+@import "../../style/style.scss";
+
+.container {
+  margin: 1rem auto;
+}
+
+.spin {
+  margin: 5rem auto;
+  @include flex($align: center, $justify: center);
+}
