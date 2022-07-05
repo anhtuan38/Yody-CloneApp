@@ -1,0 +1,85 @@
+@import "../../../style/style.scss";
+
+.section-slider-product {
+  .section-image {
+    img {
+      width: 100%;
+    }
+  }
+  .product-content {
+    margin-top: 3rem;
+    position: relative;
+
+    .swiper {
+      &:hover {
+        .swiper-button-prev {
+          display: block;
+
+          @include keyframes(hoverleft) {
+            from {
+              left: 0;
+            }
+            to {
+              left: calc(0% + 12px);
+            }
+          }
+          @include animation(hoverleft, 0.2s, ease-in, 1);
+        }
+      }
+      &:hover {
+        .swiper-button-next {
+          display: block;
+          @include keyframes(hoverright) {
+            from {
+              right: 0;
+            }
+            to {
+              right: calc(0% + 12px);
+            }
+          }
+          @include animation(hoverright, 0.2s, ease-in, 1);
+        }
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        transition: all 0.3s;
+        display: none;
+        position: absolute;
+        top: 50%;
+        width: 4rem;
+        height: 4rem;
+        &::after {
+          display: none;
+        }
+      }
+
+      .swiper-button-next {
+        background-size: contain;
+        background-image: url("../../../assets/Icon/next_bst.svg");
+      }
+
+      .swiper-button-prev {
+        background-size: contain;
+        background-image: url("../../../assets/Icon/prev_bst.svg");
+      }
+
+      .swiper-slide {
+        margin-right: 2rem !important;
+      }
+    }
+    .swiper-slide {
+      text-align: center;
+      height: initial;
+
+      .swiper-end {
+        @include flex($justify: center, $align: center);
+        font-size: $fs-sizable;
+        font-weight: $fw-medium;
+        color: $yellow;
+        background-color: rgb(254, 238, 234);
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../style/style.scss";
+
+.header-content {
+  .list-title {
+    text-align: center;
+    .list-title-item {
+      cursor: pointer;
+      display: inline-block;
+      padding: 0 2rem;
+      margin: 1rem;
+      color: $black;
+      border: 1px solid $gray;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      text-align: center;
+      line-height: 4rem;
+      &:hover {
+        background-color: $yellow;
+        color: $white;
+      }
+    }
+    .item-active {
+      background-color: $yellow;
+      color: $white;
+    }
+  }
+}

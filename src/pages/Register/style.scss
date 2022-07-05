@@ -1,0 +1,32 @@
+@import '../../style/style.scss';
+
+.box-interests {
+  margin: 2rem 0 !important;
+}
+
+.ant-radio-button-wrapper-checked {
+  border: 1px solid $yellow !important;
+  color: $yellow !important;
+}
+
+.ant-radio-button-wrapper:hover {
+  color: $yellow !important;
+}
+
+.text-center {
+  width: 100%;
+  font-weight: $fw-bold;
+}
+
+.btn-register {
+  padding: 8px 64px;
+  min-width: 218px;
+  min-height: 48px;
+  background-color: $yellow;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 8px 0;
+}

@@ -1,0 +1,42 @@
+@import "../../../style/style.scss";
+.service {
+  background-color: $light;
+  padding: 2rem 0;
+
+  @include respond-to(phone-and-down) {
+    padding: 0 6px;
+  }
+  @include respond-to(phone-and-down) {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .description {
+    padding-left: 1rem;
+    color: $black;
+
+    .description-title {
+      font-size: 1.7rem;
+      @include respond-to(tablet-and-down) {
+        font-size: 1.1rem;
+      }
+      @include respond-to(phone-and-down) {
+        font-size: 1.2rem;
+      }
+    }
+    .description-sub-title {
+      font-size: 1.4rem;
+      @include respond-to(tablet-and-down) {
+        font-size: 1.1rem;
+      }
+      @include respond-to(phone-and-down) {
+        font-size: 1.1rem;
+      }
+      .description-sub-title-light {
+        color: $yellow;
+      }
+    }
+  }
+}

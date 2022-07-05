@@ -1,0 +1,23 @@
+@import "../../style/style.scss";
+
+.price-product {
+  font-weight: bold;
+  color: $orange;
+}
+
+.button {
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.table-cart {
+  border-right: 2px solid $gray;
+}
+
+.product-img {
+  width: 4rem;
+  height: auto;
+
+  img {
+    width: 100%;
+  }
+}
