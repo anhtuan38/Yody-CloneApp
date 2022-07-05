@@ -1,0 +1,67 @@
+@import "../../../style/style.scss";
+
+.nav-menu-drop {
+  @include flex($justify: space-between);
+  z-index: $z-sticky;
+  background-color: $white;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0 3rem;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @include respond-to(tablet-and-down) {
+    padding: 1rem 0;
+  }
+  .item-drop-down {
+    width: 100%;
+    .title {
+      margin-bottom: 1rem;
+      font-weight: $fw-medium;
+      @include respond-to(tablet-and-down) {
+        padding: 0;
+        font-size: 1.2rem;
+        text-align: left;
+      }
+      .item-link {
+        font-size: $fs-base;
+        color: $black;
+        text-transform: uppercase;
+        &:hover {
+          color: $yellow;
+        }
+        @include respond-to(tablet-and-down) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .item {
+      padding-bottom: 2.5rem;
+      @include respond-to(tablet-and-down) {
+        padding-bottom: 1rem;
+        font-size: 1rem;
+      }
+      .item-link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $dark;
+        text-transform: capitalize;
+        &:hover {
+          color: $yellow;
+        }
+        @include respond-to(tablet-and-down) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  .banner {
+    padding: 2.5rem 0;
+    img {
+      max-height: 330px;
+      @include respond-to(tablet-and-down) {
+        max-height: 230px;
+      }
+    }
+  }
+}

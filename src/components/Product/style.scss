@@ -1,0 +1,79 @@
+@import "../../style/style.scss";
+
+.product-image {
+  overflow: hidden;
+  border: 0.8px solid rgb(243, 237, 237);
+  position: relative;
+  &:hover {
+    img:first-child {
+      transform: scale(1.1);
+    }
+  }
+  img:first-child {
+    width: 100%;
+    object-fit: cover;
+    transition: linear 0.3s;
+  }
+  .btn-add-to-cart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.product-name {
+  color: $black;
+  text-transform: capitalize;
+  font-size: $fs-base;
+  padding-top: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  @include respond-to(tablet-and-down) {
+    font-size: 1.2rem;
+  }
+  &:hover {
+    color: $yellow;
+  }
+}
+.product-price-box {
+  @include flex();
+  .price {
+    font-weight: $fw-medium;
+    padding-right: 1.5rem;
+    font-size: $fs-base;
+    color: $yellow;
+    @include respond-to(tablet-and-down) {
+      font-size: 1.4rem;
+    }
+    @include respond-to(phone-and-down) {
+      font-size: 1.3rem;
+    }
+  }
+  .price-old {
+    text-decoration: line-through;
+    color: $gray;
+    @include respond-to(tablet-and-down) {
+      font-size: 1.3rem;
+    }
+    @include respond-to(phone-and-down) {
+      font-size: 1.1rem;
+    }
+  }
+}
+.option-view {
+  margin: 4px 0 8px 0;
+  .view-color {
+    margin-right: 8px;
+    cursor: pointer;
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../style/style.scss";
+
+.container-profile {
+  background-color: #fff;
+  height: 100%;
+  margin-bottom: 5rem;
+  padding: 2rem 5rem;
+}
+
+.btn-orange {
+  background-color: $orange !important;
+  color: $white !important;
+  border-radius: 5px !important;
+}
+
+.title {
+  font-size: 2rem;
+  color: $orange;
+  font-weight: $fw-medium;
+}
+
+.profile-content {
+  border-top: 1px solid rgba($gray, 0.5);
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+.profile-info {
+  text-align: left !important;
+  margin: 1rem 0 !important;
+}
+.body-content {
+  @include flex($align: center, $justify: center, $direction: column);
+  img {
+    width: 70px;
+  }
+  span {
+    font-size: 1.6rem;
+    color: $gray;
+    margin: 24px;
+  }
+}
+
+.buy-now {
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: $yellow;
+  color: $white;
+  padding: 12px 52px;
+  border-radius: 4px;
+}

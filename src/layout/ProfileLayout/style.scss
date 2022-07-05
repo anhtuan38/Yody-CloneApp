@@ -1,0 +1,29 @@
+@import "../../style/style.scss";
+
+.header-like-content {
+  margin: 5rem 0;
+  text-align: center;
+  background-color: $white;
+  font-size: 1.4rem;
+  .top-header-like {
+    padding: 2rem 0;
+    background-color: rgba($gray, 0.3);
+    .home {
+      color: $black;
+      &:hover {
+        color: $yellow;
+      }
+    }
+    .separation {
+      margin: 0 8px;
+    }
+    .text-like {
+      color: $yellow;
+    }
+  }
+  .title-header {
+    margin-top: 1rem;
+    color: $yellow;
+    text-transform: uppercase;
+  }
+}
